@@ -5,4 +5,15 @@
       <directory>tests</directory>
     </testsuite>
   </testsuites>
+
+  <!-- Enable code coverage and tell PHPUnit what code to measure -->
+  <coverage pathCoverage="true" processUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+    <report>
+      <!-- print a short summary to stdout; add html/clover if you want -->
+      <text outputFile="php://stdout" showOnlySummary="true"/>
+    </report>
+  </coverage>
 </phpunit>
