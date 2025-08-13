@@ -1,0 +1,20 @@
+<?php
+return [
+  'Full Name' => 'Jina Kamili',
+  'First Name' => 'Jina la Kwanza',
+  'Last Name' => 'Jina la Mwisho',
+  'Phone Number' => 'Namba ya Simu',
+  'Email' => 'Barua Pepe',
+  'Password' => 'Neno la Siri',
+  'Confirm Password' => 'Thibitisha Neno la Siri',
+  'Date of Birth' => 'Tarehe ya Kuzaliwa',
+  'Country' => 'Nchi',
+  'Region' => 'Mkoa',
+  'District' => 'Wilaya',
+  'Address' => 'Anwani',
+  'National ID' => 'Kadi ya Taifa',
+  'NIDA Number' => 'Namba ya NIDA',
+  'Save' => 'Hifadhi',
+  'Send' => 'Tuma',
+  'Delete' => 'Futa',
+];

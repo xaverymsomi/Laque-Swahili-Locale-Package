@@ -1,0 +1,39 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+template: |
+  ## Summary
+  
+  ## Changes
+  $CHANGES
+  
+  ## Breaking Changes
+  
+  ## Migration Notes
+  
+  ## Contributors
+  
+categories:
+  - title: '🚀 Features'
+    labels: ['feature', 'enhancement']
+  - title: '🐛 Fixes'
+    labels: ['bug', 'fix']
+  - title: '🧹 Refactors'
+    labels: ['refactor']
+  - title: '📝 Docs'
+    labels: ['docs']
+  - title: '⚙️ CI'
+    labels: ['ci']
+  - title: '🧰 Chore'
+    labels: ['chore']
+
+change-template: '- $TITLE (#$NUMBER) by @$AUTHOR'
+exclude-labels: ['skip-changelog']
+
+version-resolver:
+  major:
+    labels: ['semver:major', 'breaking']
+  minor:
+    labels: ['semver:minor', 'feature', 'enhancement']
+  patch:
+    labels: ['semver:patch', 'fix', 'bug', 'docs', 'chore', 'ci', 'refactor']
+  default: patch
